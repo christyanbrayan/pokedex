@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&family=Press+Start+2P&display=swap');
+
+.cards {
+    margin: 30px auto;
+    padding: 0 30px;
+}
+
+.card {
+    min-width: 220px;
+    min-height: 300px;
+    background: linear-gradient(45deg, #d2ffde, #ceefff, #ded1ff);
+    border: #eee;
+    border-radius: 20px;
+    box-shadow: 7px 7px 13px 0 rgba(50, 50, 50, 0.22);
+    transition: all 0.3s ease-out;
+    padding: 0 5px;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-topo {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.card-titulo {
+    font-family: 'Press Start 2P';
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 15px;
+    border: 2px solid black;
+    padding: 0;
+}
+
+.card-subtitulo {
+    background-color: red;
+    color: white;
+    font-family: 'Press Start 2P';
+    font-size: 10px;
+    text-transform: capitalize;
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 0 0;
+}
+
+.cards img {
+    height: 200px;
+    width: 200px;
+    margin: 0 auto;
+}
+
+.card-botao {
+    background: linear-gradient(to right, #a2ccb6 0%, #fceeb5 50%, #ee786e 100%);
+    background-size: 500%;
+    border: 2px solid black;
+    border-radius: 5rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    color: white;
+    cursor: grab;
+    font-family: 'Press Start 2P';
+    font-size: 8pt;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    height: 30px;
+    outline: none;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.card-botao:hover {
+    animation-name: gradient;
+    -webkit-animation-name: gradient;
+    animation-duration: 1s;
+    -webkit-animation-duration: s;
+    animation-iteration-count: 1;
+    -webkit-animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    100% {
+        background-position: 100%;
+    }
+}

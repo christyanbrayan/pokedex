@@ -1,0 +1,49 @@
+.cabecalho {
+    display: block;
+    border-bottom: 10px solid #3c5aa6;
+    padding: 10px 10px;
+    background: linear-gradient(15deg, #8153ff, #99dafa, #8153ff);
+}
+
+.cabecalho-logo img {
+    position: absolute;
+    top: 25px;
+}
+
+.cabecalho-pesquisa {
+    display: flex;
+    float: right;
+    position: relative;
+    right: 40px;
+    top: 35px;
+}
+
+.cabecalho-pesquisa input {
+    color: black;
+    border: 5px solid #3c5aa6;
+    border-radius: 40px;
+    background-color: #f0f0f0;
+    width: 300px;
+    height: 35px;
+    font-family: 'Press Start 2P';
+    text-align: center;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.cabecalho-pesquisa input:hover {
+    border-color: #2a75bb;
+}
+
+.cabecalho-pesquisa input::placeholder {
+    color: #8e8e8e;
+}
+
+.botao-pesquisa {
+    height: 32px;
+    width: 32px;
+    border: none;
+    background: none;
+    background-image: url(../../../assets/pokeball.ico);
+    cursor: pointer;
+}

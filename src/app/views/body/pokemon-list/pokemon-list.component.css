@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&family=Press+Start+2P&display=swap');
+
+/* responsividade */
+
+@media screen and (max-width: 1500px) {
+    .titulo-home img {
+        width: 500px;
+    }
+}
+
+@media screen and (min-width: 1500px) {
+    .titulo-home img {
+        width: 600px;
+    }
+}
+
+.titulo-home img {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.lista-cards {
+    margin-top: -10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-flow: wrap;
+    gap: 20px;
+}

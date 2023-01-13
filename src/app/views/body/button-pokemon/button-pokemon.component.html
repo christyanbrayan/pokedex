@@ -1,0 +1,32 @@
+<div class="popup">
+    <div class="popup-interno">
+
+        <div class="popup-titulos">
+            <h1 class="popup-titulo animate__bounceIn" mat-dialog-title>{{pokemon.name}}</h1>
+            <h2 class="popup-subtitulo" mat-dialog-content>
+                <p>{{pokemon?.detalhes?.types[0]?.type?.name}}</p>
+            </h2>
+        </div>
+
+        <div class="popup-atributos">
+            <ul>
+                <li>HP:{{pokemon?.detalhes?.stats[0]?.base_stat}}</li>
+                <li>Ataque:{{pokemon?.detalhes?.stats[1]?.base_stat}}</li>
+                <li>Defesa:{{pokemon?.detalhes?.stats[2]?.base_stat}}</li>
+                <li>Ataque Especial:{{pokemon?.detalhes?.stats[3]?.base_stat}}</li>
+                <li>Defesa Especial:{{pokemon?.detalhes?.stats[4]?.base_stat}}</li>
+                <li>Velocidade:{{pokemon?.detalhes?.stats[5]?.base_stat}}</li>
+            </ul>
+        </div>
+
+        <div class="popup-imagem">
+            <img src={{pokemon?.detalhes?.sprites.other.home.front_default}} alt="Imagem Pokémon"
+                class="imagem-pokemon animate__animated animate__tada">
+        </div>
+
+        <div class="popup-rodape" mat-dialog-actions>
+            <button class="popup-botao" mat-dialog-close>Sair</button>
+        </div>
+
+    </div>
+</div>

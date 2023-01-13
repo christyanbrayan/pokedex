@@ -1,0 +1,17 @@
+<div class="cards">
+    <mat-card class="card">
+
+        <mat-card-header class="card-topo">
+            <h1 class="card-titulo">{{pokemon.name}}</h1>
+            <h2 class="card-subtitulo">{{pokemon?.detalhes?.types[0]?.type?.name}}</h2>
+        </mat-card-header>
+
+        <img src={{pokemon?.detalhes?.sprites?.front_shiny}} alt="Imagem Pokémon Pixelizada">
+
+        <button class="card-botao" (click)="MostrarPokemon()" (click)="ref.play()">
+            Mais informações
+        </button>
+
+        <audio #ref src="assets/sound-effect.mp3"></audio>
+    </mat-card>
+</div>
